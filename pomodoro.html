@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Pomodoro Clock</title>
+  <link href="https://fonts.googleapis.com/css?family=Arvo:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="css/pomodoro.css">
+  <link rel="stylesheet" href="css/pomodoro-md.css" media="(min-width: 450px)">
+  <link rel="stylesheet" href="css/pomodoro-lg.css" media="(min-width: 950px)">
+</head>
+<body>
+
+  <div class="container">
+    <!-- title -->
+    <h1 class="title">
+      Pomodoro clock
+    </h1>
+
+    <!-- task -->
+    <form class="task">
+      <label>Write your activity :</label>
+      <input list="activities" name="activities" placeholder="You can type anything">
+        <datalist id="activities">
+          <option value="Coding! What else?!">
+          <option value="Get in shape for Summer">
+          <option value="Game of Thrones">
+          <option value="Googling: what can you do in 25 minutes">
+          <option value="Think about the meaning of life">
+        </datalist>
+      <br>
+      <!-- set time -->
+      <label>Timer:</label>
+      <input type="number" name="quantity" min="1" max="59" class="time" value="25">
+      <button type="reset">
+        Reset
+      </button>
+    </form>
+
+    <!-- timer -->
+    <div class="timer-container">
+      <div class="timer">
+        Set your time
+      </div>
+      <div class="checkmark check-first"></div>
+      <div class="checkmark check-second"></div>
+      <div class="checkmark check-third"></div>
+      <div class="checkmark check-fourth"></div>
+    </div>
+    <!-- start and stop the timer -->
+    <div class="btn-container">
+      <button class="start" type="button">
+        Start!
+      </button>
+      <button class="stop" type="button">
+        Stop
+      </button>
+    </div>
+  </div>
+  <script src="pomodoro.js"></script>
+</body>
+</html>

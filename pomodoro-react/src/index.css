@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css?family=Arvo:400,700');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arvo', serif;
+  font-size: 20px;
+  color: rgba(240, 0, 0, 0.64);
+  background-color: rgba(54, 155, 67, 0.47);
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*************************************/
+/* Header */
+
+.main-header {
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  border-bottom: 3px solid rgba(240, 0, 0, 0.64);
+  margin-left: 17px;
+}
+
+/****************************************************/
+/* Timer */
+
+.timer-container {
+  position: relative;
+  margin: 0 auto;
+}
+
+.timer {
+  width: 80vw;
+  height: 80vw;
+  font-size: 35px;
+  line-height: 80vw;
+  text-align: center;
+  color: rgb(85, 176, 97);
+  text-shadow: 1px 1px 4px black;
+  margin: 20px 0;
+  background: #F00000; /* fallback for old browsers */
+  background: linear-gradient(to left, rgba(240, 0, 0, 0.64) , rgba(220, 40, 30, 0.96));
+  /* gradients from https://uigradients.com/# */
+  border-radius: 50%;
+  will-change: transform;
+  transition: box-shadow 500ms ease;
+}
+
+.checkmark-1 {
+  box-shadow: inset 0 0 0 8px #db6053;
+}
+.checkmark-2 {
+  box-shadow: inset 0 0 0 8px #db6053, inset 0 0 0 16px #8cbc93;
+}
+.checkmark-3 {
+  box-shadow: inset 0 0 0 8px #db6053, inset 0 0 0 16px #8cbc93, inset 0 0 0 24px #db6053;
+}
+.checkmark-4 {
+  box-shadow: inset 0 0 0 8px #db6053, inset 0 0 0 16px #8cbc93, inset 0 0 0 24px #db6053, inset 0 0 0 32px #8cbc93;
+}
+
+.msg {
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  bottom: 10%;
+  font-size: 25px;
+  text-align: center;
+  color: #212622;
+}
+
+/******************************************************/
+/* Form */
+
+input {
+  padding-left: 5px;
+  margin: 5px 0;
+  border-radius: 5px;
+  border: 1px solid #d65151;
+  height: 30px;
+  font-weight: bold;
+  color: rgba(189, 30, 30, 0.49);
+}
+
+.btn-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+button {
+  width: 70px;
+  height: 48px;
+  background-color: rgba(255, 255, 255, 0.75);
+  color: #ca0d0d;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+button[type='submit'] {
+  height: 40px;
+  margin-left: 10px;
+  margin-bottom: 0;
+}
